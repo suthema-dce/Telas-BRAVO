@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="icon" href="img/logoB.png"/>
+        <title>WEB 3</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-image: url('img/fundo.png'); 
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-center container col-sm-10 col-md-6">
+            <h1> BRAVO 😡 </h1>
+            <img src="img/logoB.png" alt="Logo linda" width="200" class="img-fluid mb-3"/> <!-- Classe img-fluid para responsividade -->
+ 
+            <form action="login.php" method="post"> <!-- Altere para o arquivo que processa o login -->
+                <div class="form-floating mt-3 mb-3">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="email@exemplo.com" required>
+                    <label for="email">Email</label>
+                </div>
+           
+                <div class="form-floating mb-3">
+                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
+                    <label for="senha">Senha</label>
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <input type="submit" value="Entrar" class="btn btn-success" style="background-color: #28a745; border-color: #28a745;">
+                    <a href="cadastro.html" class="btn btn-link">Cadastre-se</a>
+                </div>            
+            </form>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
